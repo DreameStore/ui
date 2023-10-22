@@ -23,7 +23,7 @@
     "clean": "rm -rf .next .turbo dist",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build",
-    "release": "release-it --dry-run"
+    "release": "release-it --npm.pnpm"
   },
   "peerDependencies": {
     "react": "18.0.0",
