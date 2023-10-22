@@ -33,9 +33,13 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Log in to npm
+        run: echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+
       - name: Release NPM Package
         run: pnpm release
         env:
+          AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Export documents
