@@ -33,11 +33,8 @@ export default [
         browser: true,
       }),
       commonjs(),
-      typescript({
-        tsconfig: "./tsconfig.json",
-      }),
+      typescript(),
       postcss({
-        // extract: true,
         plugins: [tailwindcss(), autoprefixer()],
       }),
       terser(),
