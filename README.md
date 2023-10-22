@@ -12,10 +12,10 @@ You can install these UI components using [PNPM](https://pnpm.io/) as your packa
 npm install -g pnpm
 ```
 
-Once you have PNPM installed, you can add `dreame-ui` to your project using the following command:
+Once you have PNPM installed, you can add `niko0xdev/dreame-ui` to your project using the following command:
 
 ```bash
-pnpm install dreame-ui
+pnpm install niko0xdev/dreame-ui
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ pnpm install dreame-ui
 To use these UI components in your project, you can import them like any other package:
 
 ```javascript
-import { Button, Input, Card } from "dreame-ui";
+import { Button, Input, Card } from "niko0xdev/dreame-ui";
 
 // Now you can use the UI components in your code.
 ```
