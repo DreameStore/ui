@@ -35,6 +35,7 @@ export default [
       commonjs(),
       typescript(),
       postcss({
+        extract: "styles.css",
         plugins: [tailwindcss(), autoprefixer()],
       }),
       terser(),
